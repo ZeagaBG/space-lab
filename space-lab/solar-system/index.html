@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слънчева Система: SVG Интеракция</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Интерактивна Слънчева Система</h1>
+        <p class="subtitle">Кликни върху планета за детайли</p>
+        
+        <div class="map-wrapper">
+            <img src="https://assets.superhivemarket.com/store/productimage/520914/image/f1a00271df38679706b535cca22c3d94.jpg" 
+                 alt="Слънчева Система" 
+                 class="main-planets-img">
+            
+            <svg class="interaction-layer" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+                
+                <ellipse cx="849" cy="256" rx="23" ry="23" class="interactive-zone" data-planet="neptune" title="Нептун" />
+
+                <ellipse cx="786" cy="250" rx="23" ry="23" class="interactive-zone" data-planet="uranus" title="Уран" />
+
+                <ellipse cx="696" cy="250" rx="26" ry="23" class="interactive-zone" data-planet="saturn" title="Сатурн" />
+
+                <ellipse cx="615.5" cy="249.5" rx="37.5" ry="34.5" class="interactive-zone" data-planet="jupiter" title="Юпитер" />
+
+                <ellipse cx="549.5" cy="249.5" rx="11.5" ry="11.5" class="interactive-zone" data-planet="mars" title="Марс" />
+
+                <ellipse cx="500.5" cy="250" rx="20.5" ry="17" class="interactive-zone" data-planet="earth" title="Земя" />
+
+                <ellipse cx="513" cy="213" rx="9" ry="9" class="interactive-zone" data-planet="moon" title="Луна" />
+
+                <ellipse cx="449" cy="250" rx="20" ry="17" class="interactive-zone" data-planet="venus" title="Венера" />
+
+                <ellipse cx="402.5" cy="252.5" rx="8.5" ry="8.5" class="interactive-zone" data-planet="mercury" title="Меркурий" />
+
+                <ellipse cx="192.5" cy="252.5" rx="178.5" ry="175.5" class="interactive-zone" data-planet="sun" title="Слънце" />
+
+            </svg>
+        </div>
+
+        <div class="info-card" id="info-card">
+            <div class="text-container">
+                <h2 id="planet-name">Избери космическо тяло</h2>
+                <div id="planet-description" class="description-content">
+                    Докосни някое от небесните тела на изображението по-горе, за да прочетеш подробни факти и данни за него.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>ю
+    
+</body>
+</html>

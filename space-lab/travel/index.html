@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Симулатор на пътуване</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 Симулатор на пътуване в Слънчевата система</h1>
+
+    <p>
+        Избери планета и виж колко време би отнело да стигнеш до нея.
+    </p>
+
+    <select id="planet">
+        <option value="91700000">Меркурий</option>
+        <option value="41400000">Венера</option>
+        <option value="78300000">Марс</option>
+        <option value="628700000">Юпитер</option>
+        <option value="1275000000">Сатурн</option>
+        <option value="2724000000">Уран</option>
+        <option value="4351000000">Нептун</option>
+    </select>
+
+    <button onclick="calculateTravel()">
+        Изчисли
+    </button>
+
+    <div id="result"></div>
+
+    <a href="../" class="back">
+        ⬅ Обратно към главното меню
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
