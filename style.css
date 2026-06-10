@@ -92,3 +92,10 @@ h1{
     cursor: pointer;
 
 }
+.message {
+    position: absolute;
+    top: 55vh; /* 3/4 of the viewport height */
+    left: 50%;
+    font-size: 20px;
+    transform: translateX(-50%);
+}
