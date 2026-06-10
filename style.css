@@ -65,3 +65,30 @@ h1{
     inset:0;
     pointer-events:none;
 }
+
+.contributions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    color: #888;
+    background: #050816;
+    padding: 10px 0;
+}
+
+.github {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    
+}
+
+.github img {
+    width: 50px;   /* change size if needed */
+    height: auto;
+    cursor: pointer;
+
+}
