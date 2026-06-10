@@ -37,30 +37,58 @@ h1{
     flex-wrap:wrap;
 }
 
-.card{
-    width:320px;
-    padding:30px;
-    background:#111933;
-    border-radius:20px;
-    text-decoration:none;
-    color:white;
-    transition:0.3s;
-    border:1px solid rgba(255,255,255,0.1);
+.nav-links {
+    width: 90%;
+    max-width: 1200px;
+    background-color:#0c1b5e;
+    border-radius: 10px;
+    background-size: 1500px 100px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(0,150,255,0.5);
+.nav-links a {
+
+  text-decoration: none;
+  color: #cfd8ff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+
+  position: relative;
+  transition: 0.25s ease;
 }
 
-.card h2{
-    margin:15px 0;
+/* hover glow */
+.nav-links a:hover {
+  color: #00d9ff;
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
 }
 
-.card p{
-    color:#c9d6ff;
+/* animated underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #00d9ff;
+  transition: 0.3s ease;
+  transform: translateX(-50%);
 }
 
+.nav-links a:hover::after {
+  width: 100%;
+}
+.nav-links a {
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  background: rgba(0, 217, 255, 0.08);
+}
 #stars{
     position:fixed;
     inset:0;
@@ -78,6 +106,36 @@ h1{
     background: #050816;
     padding: 10px 0;
 }
+.home {
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  text-decoration: none;
+  position: relative; /* Ensure the anchor is positioned for the underline */
+  display: inline-block; /* Keeps the underline aligned to the text */
+
+}
+
+
+.home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%; /* Hidden by default */
+  height: 2px;
+  background: #00d9ff;
+  transition: width 0.3s ease;
+}
+
+.home:hover::after {
+  width: 100%; /* Expands to full width on hover */
+}
+.home:hover {
+    text-decoration: none;
+    transform: translateY(-5px) scale(1.1);
+    color: #00d9ff;
+    text-shadow: 0 0 15px rgba(0, 217, 255, 0.8);
+}
+
 .name {
     position: fixed;
     bottom: 20px;
@@ -98,14 +156,33 @@ h1{
 
 }
 .message {
-    position: absolute;
-    top: 55vh; /* 3/4 of the viewport height */
-    left: 50%;
-    font-size: 20px;
-    transform: translateX(-50%);
+    
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 .content {
   flex: 1;
+}
+.main{
+    align-items: center;
+    text-align: center;
+}
+.news {
+    
+    display: flex;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    align-self: center;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #2980ff;
+
+    justify-content: center;
+    align-items: center;
 }
 
