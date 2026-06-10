@@ -4,10 +4,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: radial-gradient(circle, #0d101a 0%, #030408 100%);
     color: #ffffff;
+}
+.page {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .container {
