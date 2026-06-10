@@ -3,12 +3,20 @@ body{
     font-family:Segoe UI,sans-serif;
     background:#050816;
     color:white;
+}
+.page{
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    min-height:calc(100vh - 80px);
 }
-
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#0c1b5e;
+}
 .container{
     text-align:center;
     background:#111933;
