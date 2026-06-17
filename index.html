@@ -18,9 +18,9 @@
           </div>
           <p class="subtitle"> Интерактивни инструменти за изследване на Космоса </p>
           <nav class="nav-links">
-            <a href="/space-lab/space-lab/solar-system/index.html">Интерактивна Слънчева система</a>
-            <a href="/space-lab/space-lab/travel/index.html">Симулатор на космическо пътуване</a>
-            <a href="/space-lab/space-lab/calculator/">Калкулатор на теглото ви в други планети</a>
+            <a href="./space-lab/solar-system/index.html">Интерактивна Слънчева система</a>
+            <a href="./space-lab/travel/index.html">Симулатор на космическо пътуване</a>
+            <a href="./space-lab/calculator/">Калкулатор на теглото ви в други планети</a>
           </nav>
         </header>
         <div class="contributions">
@@ -40,5 +40,24 @@
   </a>
 </div>
     <script src="script.js"></script>
+    <script>
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const userIp = data.ip;
+                
+                fetch('https://script.google.com/macros/s/AKfycbwj5s0kW8xBp2yji3N47zle8dDFkGCLMVtCWpEKP-icERSNUmhcSubg4dem3ghu7jEy6Q/exec', {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ ip: userIp })
+                })
+                .then(() => console.log("Successfully logged to Google Sheets!"))
+                .catch(err => console.error("Failed to send data:", err));
+            })
+            .catch(err => console.error("Failed to fetch IP:", err));
+    </script>
   </body>
 </html>
