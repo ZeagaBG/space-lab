@@ -1,14 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle, #0d101a 0%, #030408 100%);
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+body { margin:0; padding:0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:var(--bg); color:var(--text); display:flex; justify-content:center; align-items:center; min-height:100vh }
 
 .container {
     width: 95%;
@@ -30,39 +20,15 @@ h1 {
 }
 
 /* Контейнер-майка - държи снимката и SVG слоя заедно */
-.map-wrapper {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
-    display: block;
-    width: 100%;
-    margin-bottom: 30px;
-}
+.map-wrapper { position:relative; border-radius:10px; overflow:hidden; display:block; width:100%; margin-bottom:22px; border:1px solid rgba(255,255,255,0.04); background:var(--panel) }
 
-.main-planets-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+.main-planets-img { display:block; width:100%; height:auto }
 
 /* SVG Интерактивен слой - залепен върху снимката */
-.interaction-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* Пропуска кликове през празните пространства */
-}
+.interaction-layer { position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none }
 
 /* Невидимата зона, която улавя кликането */
-.interactive-zone {
-    fill: rgba(255, 255, 255, 0); 
-    stroke: none;
-    cursor: pointer;
-    pointer-events: auto; /* Активира кликането само върху елипсите */
-}
+.interactive-zone { fill: rgba(255,255,255,0); stroke:none; cursor:pointer; pointer-events:auto }
 
 /* Визуалната неонова граница */
 .neon-border {
@@ -82,16 +48,7 @@ h1 {
 }
 
 /* Информационна карта */
-.info-card {
-    background: rgba(20, 25, 40, 0.6);
-    border-radius: 12px;
-    padding: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(12px);
-    transition: all 0.3s ease;
-    max-width: 700px;
-    margin: 0 auto;
-}
+.info-card { background:var(--panel); border-radius:12px; padding:18px; border:1px solid rgba(255,255,255,0.04); max-width:700px; margin:0 auto }
 
 .text-container { 
     text-align: left; 

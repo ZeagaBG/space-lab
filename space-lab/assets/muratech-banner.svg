@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200">
+  <rect width="100%" height="100%" fill="#f5efe6" />
+  <g transform="translate(40,120)">
+    <text x="0" y="0" font-family="Comic Sans MS, ComicNeue, 'Segoe UI', sans-serif" font-size="56" fill="#2b2b2b" style="font-weight:700">MuraTech</text>
+    <line x1="0" y1="14" x2="220" y2="14" stroke="#d6c9b8" stroke-width="8" stroke-linecap="round" opacity="0.6" />
+  </g>
+  <text x="40" y="44" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" fill="#7a6f60">За мен</text>
+</svg>

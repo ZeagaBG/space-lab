@@ -7,38 +7,64 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="stars"></div>
-    <div class="container">
-      <div class="menu">
-        <header class="navbar">
-          <div class="logo">
-            <a href="/space-lab/index.html" class="home">
-                <h1>🚀 Космическа лаборатория</h1>
-            </a>
+    <div id="stars" aria-hidden="true"></div>
+
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Интерактивна космическа лаборатория</p>
+          <h1>🚀 Космическа лаборатория</h1>
+          <p class="subtitle">
+            Изследвай Слънчевата система, симулирай пътувания и провери как ще тежиш на други планети.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="space-lab/solar-system/index.html">Разгледай системата</a>
+            <a class="btn btn-secondary" href="space-lab/travel/index.html">Симулирай пътуване</a>
           </div>
-          <p class="subtitle"> Интерактивни инструменти за изследване на Космоса </p>
-          <nav class="nav-links">
-            <a href="./space-lab/solar-system/index.html">Интерактивна Слънчева система</a>
-            <a href="./space-lab/travel/index.html">Симулатор на космическо пътуване</a>
-            <a href="./space-lab/calculator/">Калкулатор на теглото ви в други планети</a>
-          </nav>
-        </header>
-        <div class="contributions">
-          <p class="name"> Направено от Мурат </p>
-          <p class="message"> Очаквайте повече скоро! </p>
         </div>
-        <div class="socials">
-          <a href="https://github.com/ZeagaBG" target="_blank" class="github">
-            <img src="5968866.png" alt="link image">
-          </a>
+
+        <div class="hero-card">
+          <h2>Какво ще откриеш</h2>
+          <ul>
+            <li>Интерактивни факти за планетите</li>
+            <li>Бързи космически калкулатори</li>
+            <li>Нова визуална премяна в космически стил</li>
+          </ul>
         </div>
-      </div>
+      </header>
+
+      <main class="cards-grid">
+        <a class="card" href="space-lab/solar-system/index.html">
+          <h3>☄️ Интерактивна Слънчева система</h3>
+          <p>Кликни върху планети и получи кратки факти за всяко космическо тяло.</p>
+        </a>
+
+        <a class="card" href="space-lab/travel/index.html">
+          <h3>🛰️ Симулатор на пътуване</h3>
+          <p>Сравни колко време би отнело да стигнеш до различни планети.</p>
+        </a>
+
+        <a class="card" href="space-lab/calculator/index.html">
+          <h3>🌍 Калкулатор на теглото</h3>
+          <p>Изчисли как ще тежиш на Меркурий, Юпитер, Нептун и други.</p>
+        </a>
+      </main>
+
+      <section class="about-box">
+        <h2 class="about-title">За мен</h2>
+        <div class="about-content">
+          <span class="about-actions">
+            <a class="btn btn-primary" href="https://zeagabg.github.io/MuraTech" target="_blank" rel="noopener noreferrer">Мурат</a>
+          </span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Направено от Мурат</p>
+        <a href="https://github.com/ZeagaBG" target="_blank" rel="noopener noreferrer">GitHub профил</a>
+      </footer>
     </div>
-   <div class="main">
-  <a href="https://www.nasa.gov/2026-news-releases/" class="news">
-    Актуални новини от НАСА
-  </a>
-</div>
+
     <script src="script.js"></script>
   </body>
 </html>

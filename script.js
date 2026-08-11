@@ -1,22 +1,27 @@
 const stars = document.getElementById("stars");
 
-for(let i = 0; i < 200; i++){
+if (stars) {
+  const count = 90;
 
-    const star = document.createElement("div");
+  for (let i = 0; i < count; i += 1) {
+    const star = document.createElement("span");
+    star.className = "star";
 
-    star.style.position = "absolute";
-    star.style.width = "2px";
-    star.style.height = "2px";
-    star.style.background = "white";
+    const size = Math.random() * 2 + 1; // small, slightly varied
+    const left = Math.random() * 100;
+    const top = Math.random() * 100;
+    const delay = Math.random() * 4;
+    const opacity = 0.35 + Math.random() * 0.55;
+    const rot = (Math.random() - 0.5) * 30; // slight rotation for handmade feel
 
-    star.style.left =
-        Math.random() * 100 + "%";
-
-    star.style.top =
-        Math.random() * 100 + "%";
-
-    star.style.opacity =
-        Math.random();
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+    star.style.left = `${left}%`;
+    star.style.top = `${top}%`;
+    star.style.opacity = `${opacity}`;
+    star.style.animationDelay = `${delay}s`;
+    star.style.transform = `rotate(${rot}deg)`;
 
     stars.appendChild(star);
+  }
 }

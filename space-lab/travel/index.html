@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="bg">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Симулатор на пътуване</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симулатор на пътуване</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="panel">
+        <p class="eyebrow">Космически маршрут</p>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-secondary" href="../../index.html">⬅ Обратно</a>
+          <h1 style="margin:0">🚀 Симулатор на пътуване в Слънчевата система</h1>
+        </div>
+        <p class="subtitle">Избери планета и виж колко време би отнело да стигнеш до нея с различни видове транспорт.</p>
 
-<div class="container">
+        <label class="field-label" for="planet">Избери цел</label>
+        <select id="planet">
+          <option value="91700000">Меркурий</option>
+          <option value="41400000">Венера</option>
+          <option value="78300000">Марс</option>
+          <option value="628700000">Юпитер</option>
+          <option value="1275000000">Сатурн</option>
+          <option value="2724000000">Уран</option>
+          <option value="4351000000">Нептун</option>
+        </select>
 
-    <h1>🚀 Симулатор на пътуване в Слънчевата система</h1>
+        <button type="button" onclick="calculateTravel()">Изчисли</button>
 
-    <p>
-        Избери планета и виж колко време би отнело да стигнеш до нея.
-    </p>
+        <div id="result" class="result-card" aria-live="polite"></div>
 
-    <select id="planet">
-        <option value="91700000">Меркурий</option>
-        <option value="41400000">Венера</option>
-        <option value="78300000">Марс</option>
-        <option value="628700000">Юпитер</option>
-        <option value="1275000000">Сатурн</option>
-        <option value="2724000000">Уран</option>
-        <option value="4351000000">Нептун</option>
-    </select>
+        <a href="../../index.html" class="back">⬅ Обратно към главното меню</a>
+      </section>
+    </main>
 
-    <button onclick="calculateTravel()">
-        Изчисли
-    </button>
-
-    <div id="result"></div>
-
-    <a href="../../" class="back">
-        ⬅ Обратно към главното меню
-    </a>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

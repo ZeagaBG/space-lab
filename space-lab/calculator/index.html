@@ -1,61 +1,47 @@
 <!DOCTYPE html>
 <html lang="bg">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Калкулатор на тегло</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="navbar">
-  <div class="logo">
-    
-  </div>
-  <div class="page">
-  <div class="container">
-    
-  </div>
-</div>
-  
-</header>
-<div class="container">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калкулатор на тегло</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="panel">
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-secondary" href="../../index.html">⬅ Обратно</a>
+          <div>
+            <p class="eyebrow">Космически калкулатор</p>
+            <h1 style="margin:0">🌍 Калкулатор на тегло на планетите</h1>
+          </div>
+        </div>
+        <p class="subtitle">Въведи теглото си на Земята и избери планета, за да видиш как ще тежиш там.</p>
 
-    <h1>🌍 Калкулатор на тегло на планетите</h1>
+        <label class="field-label" for="weight">Тегло на Земята (кг)</label>
+        <input type="number" id="weight" placeholder="Например 70">
 
-    <p>
-        Въведи теглото си на Земята и избери планета.
-    </p>
+        <label class="field-label" for="planet">Избери планета</label>
+        <select id="planet">
+          <option value="0.38">Меркурий</option>
+          <option value="0.91">Венера</option>
+          <option value="1">Земя</option>
+          <option value="0.38">Марс</option>
+          <option value="2.34">Юпитер</option>
+          <option value="1.06">Сатурн</option>
+          <option value="0.92">Уран</option>
+          <option value="1.19">Нептун</option>
+        </select>
 
-    <input
-        type="number"
-        id="weight"
-        placeholder="Тегло на Земята (кг)"
-    >
+        <button type="button" onclick="calculate()">Изчисли</button>
 
-    <select id="planet">
-        <option value="0.38">Меркурий</option>
-        <option value="0.91">Венера</option>
-        <option value="1">Земя</option>
-        <option value="0.38">Марс</option>
-        <option value="2.34">Юпитер</option>
-        <option value="1.06">Сатурн</option>
-        <option value="0.92">Уран</option>
-        <option value="1.19">Нептун</option>
-    </select>
+        <div id="result" class="result-card" aria-live="polite"></div>
 
-    <button onclick="calculate()">
-        Изчисли
-    </button>
+        <a href="../../index.html" class="back">⬅ Обратно към главното меню</a>
+      </section>
+    </main>
 
-    <div id="result"></div>
-
-    <a href="../../" class="back">
-        ⬅ Обратно към главното меню
-    </a>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

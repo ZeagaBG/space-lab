@@ -1,56 +1,32 @@
-body{
-    margin:0;
-    font-family:Segoe UI,sans-serif;
-    background:#050816;
-    color:white;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+body { margin:0; min-height:100vh; font-family:"Segoe UI", sans-serif; color:var(--text); background:var(--bg) }
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 
-.container{
-    width:90%;
-    max-width:800px;
-    background:#111933;
-    padding:40px;
-    border-radius:20px;
-    text-align:center;
+.panel { width:100%; max-width:760px; padding:22px; border-radius:12px; background:var(--panel); border:1px solid rgba(255,255,255,0.04) }
+
+.eyebrow { text-transform:uppercase; letter-spacing:0.18em; font-size:0.78rem; color:var(--accent) }
+
+h1 { margin:8px 0 10px; font-size:1.8rem }
+
+.subtitle { color:var(--muted); margin-bottom:14px; line-height:1.6 }
+
+.field-label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
-h1{
-    color:#7db6ff;
-}
+select, button { width:100%; padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.06); font-size:15px }
+select { background:rgba(255,255,255,0.02); color:var(--text) }
+button { margin-top:12px; background:transparent; border:2px solid var(--accent); color:var(--accent); font-weight:700; cursor:pointer }
 
-select,
-button{
-    width:100%;
-    padding:12px;
-    margin-top:15px;
-    border:none;
-    border-radius:10px;
-    font-size:16px;
-}
+.result-card { margin-top:16px; padding:14px; border-radius:10px; background:var(--panel); line-height:1.6 }
 
-button{
-    background:#2980ff;
-    color:white;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#1b63cc;
-}
-
-#result{
-    margin-top:25px;
-    text-align:left;
-    line-height:1.8;
-}
-
-.back{
-    display:block;
-    margin-top:25px;
-    color:#7db6ff;
-    text-decoration:none;
-}
+.back { display:inline-block; margin-top:16px; color:var(--accent); text-decoration:none }
