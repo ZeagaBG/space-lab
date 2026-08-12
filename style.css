@@ -146,5 +146,8 @@ h1 { margin-bottom:10px; font-size: clamp(1.8rem, 3.2vw, 2.4rem); }
     grid-template-columns: 1fr;
   }
 }
-
+#planet{
+  color:#030712;
+  background-color: white;
+}
 
